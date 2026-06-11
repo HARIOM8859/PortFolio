@@ -1,4 +1,6 @@
 function Hero() {
+  const profilePhoto = `${import.meta.env.BASE_URL}profile-photo.jpg`;
+
   return (
     <section
       id="home"
@@ -52,7 +54,7 @@ function Hero() {
         <div className="relative rounded-[2rem] border border-white/15 bg-[#111827] p-4 shadow-2xl shadow-black/50">
           <div className="w-full text-center">
             <img
-              src="/profile-photo.jpg"
+              src={profilePhoto}
               alt="Hariom Yadav"
               className="mx-auto aspect-[4/5] w-full rounded-3xl border border-white/10 object-cover object-top shadow-xl"
             />
